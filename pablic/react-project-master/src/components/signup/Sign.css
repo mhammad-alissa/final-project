@@ -1,0 +1,14 @@
+form {
+/* border: 10px solid white; */
+/* padding: 20px; */
+}
+input{
+    width: 40%;
+}
+label{
+    text-align: start;
+}
+.borderForm {
+border: 10px solid white;
+padding: 20px;
+}

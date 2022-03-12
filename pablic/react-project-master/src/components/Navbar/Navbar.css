@@ -1,0 +1,10 @@
+.main_nav {
+    overflow: visible !important;
+  }
+  
+  .dropdown-item > a {
+    color: black !important;
+  }
+  .account:hover {
+  }
+  
