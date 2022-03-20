@@ -1,42 +1,74 @@
-import React from 'react';
-// import './App.css';
+
+import React, { Component } from 'react'
+import "./App.css";
+import "./main_styles.css";
+import "./responsive.css";
+
 import Navbar from './components/Navbar/Navbar';
+import Subcategory from './components/offers/subcategory';
 import Sign from './components/signup/Sign';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Todo from './components/Todo';
-import ExpenseTracker from './components/ExpenseTracker';
+import Login from './components/login/Login';
 import Footer from './components/Footer/Footer';
+import Service from './components/service/Service';
 
-function App() {
-  return (  
-  <BrowserRouter>
-    {/*  <div className="App"> */}
-      <header >
-       {/* <Sign/> */}
-  <Navbar>
-  </Navbar>
-  {/* <ExpenseTracker></ExpenseTracker> */}
-      </header>
-     {/* </div> */}
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import axios from "axios";
+import Landing from './components/landing/Landing';
+import Category from './components/category/Category';
+
+export class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      categories: [],
+      // services: []
+    };
+  }
 
 
-  
-    <Routes>
-      <Route path="/todolist" element={<Todo/>}>
+
+  componentDidMount() {
+    // axios.get("http://localhost/project-react1/services.php").then((res) => {
+    //   this.setState({
+    //     services: res.data,
+    //   });
+    // });
+    axios.get("http://localhost/final-project/php/category.php").then((res) => {
+        this.setState({
+          categories: res.data,
+        });
+      });
+   
+  }
+  render() {
+    
+    return (
+      <BrowserRouter>
      
-        {/* <Route index element={<div className="container">
-          <Form ClearLocal={this.ClearLocal} InputHandler = {this.InputHandler} info = {this.state.person} FormHandler={this.FormHandler} />
-        </div>} />
-        <Route path="todo" element={<Todo />} />
-        <Route path="expense-tracker" element={<Expense />} /> 
-      
-        {/* <Route path="*" element={<Nopage />} />*/}
-         
-          </Route>  <Route path="/ExpenseTracker" element={<ExpenseTracker/>}></Route>
-      </Routes>
-      <Footer></Footer>
-  </BrowserRouter>
-  );
+  <Navbar />
+ 
+    <Routes>
+       <Route >
+       <Route index
+                element={
+                  <Landing
+                    categories={this.state.categories}
+                    // services={this.state.services}
+                  />
+                }
+              />  
+              <Route path="/category" element={<Category categories={this.state.categories}   />} />
+       <Route path="/signup" element={<Sign/>}></Route> 
+       <Route path="/login" element={<Login />}></Route>
+       <Route path="/Subcategory" element={<Subcategory />} />
+       <Route path="/service" element={<Service/>}/>
+       
+        </Route> 
+    </Routes>
+   <Footer />
+</BrowserRouter>
+    )
+  }
 }
 
 export default App;
