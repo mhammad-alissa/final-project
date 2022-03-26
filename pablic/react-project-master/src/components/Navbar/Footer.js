@@ -26,9 +26,9 @@ class Footer extends Component {
 					<div className="footer_col">
 						<div className="footer_content footer_about">
 							<div className="logo_container footer_logo">
-								<div className="logo"><Link to="/"><img src="images/logo.png" alt=""/>travelix</Link></div>
+								<div className="logo"><Link to="/"><img src="images/logo.png" alt=""/>shqtuk</Link></div>
 							</div>
-							<p className="footer_about_text">Travleix, is an exclusive travel and lifestyle service, founded by Mashi Group 2022. Since its inception, it has encapsulated a simple idea: exceptional personal service at an unsurpassed level. </p>
+							<p className="footer_about_text">shqtuk, is an exclusive travel and lifestyle service, founded by Mashi Group 2022. Since its inception, it has encapsulated a simple idea: exceptional personal service at an unsurpassed level. </p>
 							<ul className="footer_social_list">
 								<li className="footer_social_item"><Link to="//pinterest.com" target="_blank"><i className="fab fa-pinterest"></i></Link></li>
 								<li className="footer_social_item"><Link to='//facebook.com' target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
@@ -113,7 +113,7 @@ class Footer extends Component {
 								</li>
 								<li className="contact_info_item d-flex flex-row">
 									<div><div className="contact_info_icon"><img src="images/planet-earth.svg" alt=""/></div></div>
-									<div className="contact_info_text"><Link to="/">www.travelix.com</Link></div>
+									<div className="contact_info_text"><Link to="/">www.shqtuk.com</Link></div>
 								</li>
 							</ul>
 						</div>

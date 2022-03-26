@@ -36,27 +36,16 @@ export class Service extends Component {
       <section>
         {/* <!-- Home --> */}
 
-        <div className="home">
-          <img
-            className="home_background parallax-window"
-            data-parallax="scroll"
-            src="images/blog_background.jpg"
-            alt="a"
-            style={{ width: "auto" }}
-          />
-          <div className="home_content">
-            <div className="home_title"></div>
-          </div>
-        </div>
+
 
         {/* <!-- Offers --> */}
 
-        <div className="listing">
+        <div className="listing" >
           {/* <!-- Search --> */}
 
           {/* <!-- Single Listing --> */}
 
-          <div className="container">
+          <div className="container" >
             <div className="row">
               <div className="col-lg-8">
                 {this.state.subcategory
@@ -73,7 +62,7 @@ export class Service extends Component {
           localStorage.setItem("products", JSON.stringify(obj));
                    
                     return (
-                      <div key={service.id} className="single_listing">
+                      <div key={service.id} className="single_listing" style={{marginTop:'150px'}}> 
                         {/* <!-- Hotel Info --> */}
                         <div className="hotel_info">
                           {/* <!-- Title --> */}

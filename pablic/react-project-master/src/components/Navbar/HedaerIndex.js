@@ -25,9 +25,9 @@ class HedaerIndex extends Component {
 			<div className="owl-carousel owl-theme home_slider">
 
 				{/* <!-- Slider Item --> */}
-					<Slider src={"images/petra.webp"} />
-					<Slider src={"images/petra2.webp"} />
-					<Slider src={"images/Ajluin.webp"} />
+					<Slider src={"images/back.jpg"} />
+					{/* <Slider src={"images/petra2.webp"} />
+					<Slider src={"images/Ajluin.webp"} /> */}
 
 			</div>
 			
@@ -70,11 +70,11 @@ class HedaerIndex extends Component {
 			{/* <!-- Home Slider Dots --> */}
 
 			<div className="home_slider_dots">
-				<ul id="home_slider_custom_dots" className="home_slider_custom_dots">
+				{/* <ul id="home_slider_custom_dots" className="home_slider_custom_dots">
 					<li className="home_slider_custom_dot active"><div></div>01.</li>
 					<li className="home_slider_custom_dot"><div></div>02.</li>
 					<li className="home_slider_custom_dot"><div></div>03.</li>
-				</ul>
+				</ul> */}
 			</div>
 			
 		</div>

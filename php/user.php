@@ -20,7 +20,7 @@ if(isset($_POST) && !empty($_POST)){
     // print_r($_FILES["image"]);
 
     // move_uploaded_file($_FILES['test']['tmp_name'],"/img".$_FILES['test']['name']);
-    $sql_edit = "UPDATE users
+    $sql_edit = "UPDATE userr
             SET name = '$name', email= '$email',password='$password', phone='$phone',image='$image_name'
             WHERE id = '$id';";
     if(mysqli_query($db,$sql_edit)){

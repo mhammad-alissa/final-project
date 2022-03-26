@@ -23,7 +23,7 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <header className="header">
+        <header className="header" style={{backgroundColor:'rgb(25, 34, 81)'}}>
           {/* <!-- Main Navigation --> */}
           <nav className="main_nav">
             <div className="container">
@@ -33,7 +33,7 @@ class Navbar extends Component {
                     <div className="logo">
                       <Link onClick={(e) => this.locationHandler(e)} to="/">
                         <img src="images/logo.png" alt="logo" />
-                        travelix
+                        Smsark
                       </Link>
                     </div>
                   </div>
@@ -55,47 +55,7 @@ class Navbar extends Component {
                           Services
                         </Link>
                       </li>
-                      <li class="main_nav_item dropdown show">
-                        <div
-                          style={{
-                            backgroundColor: "transparent",
-                            cursor: "pointer",
-                            fontSize: "13px",
-                            fontWeight: "600",
-                            marginTop: "-1px",
-                            border: "none",
-                            outline: "none",
-                            boxShadow: "none",
-                          }}
-                          class="btn btn-secondary dropdown-toggle"
-                          href="#"
-                          role=""
-                          id="dropdownMenuLink"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          WHO WE ARE
-                        </div>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuLink"
-                        >
-                          <Link
-                            to="/about"
-                            onClick={(e) => this.locationHandler(e)}
-                          >
-                            <li className="dropdown-item">about us</li>
-                          </Link>
-
-                          <Link
-                            to="/contact"
-                            onClick={(e) => this.locationHandler(e)}
-                          >
-                            <li className="dropdown-item">contact</li>
-                          </Link>
-                        </div>
-                      </li>
+                    
                       {!localStorage.getItem("users") ? (
                         <li
                           class="main_nav_item dropdown show account"
@@ -187,12 +147,7 @@ class Navbar extends Component {
                             class="dropdown-menu"
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <Link
-                              to="/user"
-                              onClick={(e) => this.locationHandler(e)}
-                            >
-                              <li className="dropdown-item">Profile</li>
-                            </Link>
+                     
 
                             <li
                               style={{ fontSize: "12px" }}
@@ -282,21 +237,7 @@ class Navbar extends Component {
                   Services
                 </Link>
               </li>
-              <li className="menu_item">
-                <Link to="/about" onClick={(e) => this.locationHandler(e)}>
-                  about us
-                </Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/contact" onClick={(e) => this.locationHandler(e)}>
-                  contact
-                </Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/weather" onClick={(e) => this.locationHandler(e)}>
-                  Weather
-                </Link>
-              </li>
+       
               <li
                 className="menu_item"
                 style={localStorage.getItem("users") ? { display: "none" } : {}}

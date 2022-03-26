@@ -17,18 +17,18 @@ class Footer extends Component {
   render() {
     return (
         <>
-      <footer className="footer">
+      <footer className="footer" style={{backgroundColor:'rgb(25 34 81)'}}>
 		<div className="container">
 			<div className="row">
 
 				{/* <!-- Footer Column --> */}
-				<div className="col-lg-3 footer_column">
+				<div className="col-lg-4 footer_column">
 					<div className="footer_col">
 						<div className="footer_content footer_about">
 							<div className="logo_container footer_logo">
-								<div className="logo"><Link to="/"><img src="images/logo.png" alt=""/>travelix</Link></div>
+								<div className="logo"><Link to="/"><img src="images/logo.png" alt=""/>Smsark</Link></div>
 							</div>
-							<p className="footer_about_text">Travleix, is an exclusive travel and lifestyle service, founded by Mashi Group 2022. Since its inception, it has encapsulated a simple idea: exceptional personal service at an unsurpassed level. </p>
+							<p className="footer_about_text">shqtuk,A site to display housing apartments and sell them very quickly, by marketing these apartments, with a very low commission. </p>
 							<ul className="footer_social_list">
 								<li className="footer_social_item"><Link to="//pinterest.com" target="_blank"><i className="fab fa-pinterest"></i></Link></li>
 								<li className="footer_social_item"><Link to='//facebook.com' target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
@@ -41,40 +41,8 @@ class Footer extends Component {
 				</div>
 
 				{/* <!-- Footer Column --> */}
-				<div className="col-lg-3 footer_column">
-					<div className="footer_col">
-						<div className="footer_title">News</div>
-						<div className="footer_content footer_blog">
-							
-							{/* <!-- Footer blog item --> */}
-							<div className="footer_blog_item clearfix">
-								<div className="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"/></div>
-								<div className="footer_blog_content">
-									<div className="footer_blog_title"><Link to="/">Travel with us this year</Link></div>
-									<div className="footer_blog_date">Nov 29, 2017</div>
-								</div>
-							</div>
-							
-							{/* <!-- Footer blog item --> */}
-							<div className="footer_blog_item clearfix">
-								<div className="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"/></div>
-								<div className="footer_blog_content">
-									<div className="footer_blog_title"><Link to="/">New destinations for you</Link></div>
-									<div className="footer_blog_date">Nov 29, 2017</div>
-								</div>
-							</div>
-
-							{/* <!-- Footer blog item --> */}
-							<div className="footer_blog_item clearfix">
-								<div className="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"/></div>
-								<div className="footer_blog_content">
-									<div className="footer_blog_title"><Link to="/">Travel with us this year</Link></div>
-									<div className="footer_blog_date">Nov 29, 2017</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
+				<div className="col-lg-1 footer_column">
+				
 				</div>
 
 				{/* <!-- Footer Column --> */}
@@ -85,12 +53,14 @@ class Footer extends Component {
 							<ul className="tags_list clearfix">
 								<li className="tag_item"><Link to="/" onClick={(e) => this.locationHandler(e)}>Home</Link></li>
 								<li className="tag_item"><Link to="/category" onClick={(e) => this.locationHandler(e)}>Services</Link></li>
-								<li className="tag_item"><Link to="/about" onClick={(e) => this.locationHandler(e)}	>About US</Link></li>
-								<li className="tag_item"><Link to="/contact">Contact Us</Link></li>
-								<li className="tag_item"><Link to="/weather">Weather</Link></li>
+
 							</ul>
 						</div>
 					</div>
+				</div>
+
+				<div className="col-lg-1 footer_column">
+				
 				</div>
 
 				{/* <!-- Footer Column --> */}
@@ -109,11 +79,11 @@ class Footer extends Component {
 								</li>
 								<li className="contact_info_item d-flex flex-row">
 									<div><div className="contact_info_icon"><img src="images/message.svg" alt=""/></div></div>
-									<div className="contact_info_text"><Link to="mailto:pr@travelix.com?Subject=Hello">pr@travelix.com</Link></div>
+									<div className="contact_info_text"><Link to="mailto:pr@travelix.com?Subject=Hello">pr@Smsark.com</Link></div>
 								</li>
 								<li className="contact_info_item d-flex flex-row">
 									<div><div className="contact_info_icon"><img src="images/planet-earth.svg" alt=""/></div></div>
-									<div className="contact_info_text"><Link to="/">www.travelix.com</Link></div>
+									<div className="contact_info_text"><Link to="/">www.Smsark.com</Link></div>
 								</li>
 							</ul>
 						</div>

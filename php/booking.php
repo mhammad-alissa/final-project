@@ -20,7 +20,7 @@ if(isset($_POST) && !empty($_POST)){
     // $phone = $_POST['phone'];
     // $email = $_POST['email'];
    
-             $sql_insert = "INSERT INTO booking (username,phoneuser,product_id,product_name,product_img,date_chosen,time_of_day,notes) VALUES ('$username','$phoneuser','$product_id','$product_name','$product_img','$date_chosen','$time_of_day','$notes')";
+             $sql_insert = "INSERT INTO bookkings (username,phoneuser,product_id,product_name,product_img,date_chosen,time_of_day,notes) VALUES ('$username','$phoneuser','$product_id','$product_name','$product_img','$date_chosen','$time_of_day','$notes')";
              if(mysqli_query($db,$sql_insert)){
              $result = mysqli_query($db,$sql);
              $row = mysqli_fetch_assoc($result);

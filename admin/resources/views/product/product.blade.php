@@ -61,7 +61,7 @@
                             <th>id</th>
                             <th>Name</th>
                             <th>location</th>
-                            <th>description</th>
+                            {{-- <th>description</th> --}}
                             <th>image</th>
                             <th>image2</th>
                             <th>image3</th>
@@ -80,7 +80,7 @@
                             {{-- <td><img class="rounded-circle" width="100" src="{{asset('/black/img/'.$category->image) }}" alt=""></td> --}}
                             <td> {{$product->p_name}}</td>
                             <td> {{$product->p_location}}</td>
-                            <td>{{$product->p_description}}</td>
+                            {{-- <td>{{$product->p_description}}</td> --}}
                             <td><img class="rounded-circle" width="100" src="{{asset('/black/img/'.$product->p_image) }}" alt=""></td>
                             <td><img class="rounded-circle" width="100" src="{{asset('/black/img/'.$product->p_sup_image1) }}" alt=""></td>
                             <td><img class="rounded-circle" width="100" src="{{asset('/black/img/'.$product->p_sup_image2) }}" alt=""></td>

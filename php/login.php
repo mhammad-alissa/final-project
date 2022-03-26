@@ -18,7 +18,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
  $password = $obj['password'];
 
  //Applying User Login query with email and password match.
- $Sql_Query = "select * from user where email = '$email' and password = '$password' ";
+ $Sql_Query = "select * from userrs where email = '$email' and password = '$password' ";
 
  // Executing SQL Query.
  $check = mysqli_fetch_array(mysqli_query($db,$Sql_Query));

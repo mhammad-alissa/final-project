@@ -55,7 +55,7 @@ export default function Booking() {
     
     <div
     className="bookingForm col-lg-4 col-md-12 col-sm-12"
-    style={{ marginTop: "138px", marginBottom: "90px" }}
+    style={{ marginTop: "200px", marginBottom: "90px" }}
    >
     {/* <!-- Contact Form --> */}
     <div className="contact_form_container">

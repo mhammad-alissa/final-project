@@ -41,13 +41,13 @@ class ProductController extends Controller
         );
 
 
-        $p_image = 'IMG'.'-'.time().'.'.$request->p_image->extension();
+        $p_image = 'IMG'.'-'.rand().'.'.$request->p_image->extension();
         $request->p_image->move(public_path('black/img'),$p_image);
 
-        $p_sup_image1 = 'IMG'.'-'.time().'.'.$request->p_sup_image1->extension();
+        $p_sup_image1 = 'IMG'.'-'.rand().'.'.$request->p_sup_image1->extension();
         $request->p_sup_image1->move(public_path('black/img'),$p_sup_image1);
 
-        $p_sup_image2 = 'IMG'.'-'.time().'.'.$request->p_sup_image2->extension();
+        $p_sup_image2 = 'IMG'.'-'.rand().'.'.$request->p_sup_image2->extension();
         $request->p_sup_image2->move(public_path('black/img'),$p_sup_image2);
         Product::create([
             'p_name'=>$request->p_name,
@@ -91,13 +91,13 @@ class ProductController extends Controller
             'category_id.required'=>'هذا الحقل مطلوب',
         ]
         );
-        $p_image = 'IMG'.'-'.time().'.'.$request->p_image->extension();
+        $p_image = 'IMG'.'-'.rand().'.'.$request->p_image->extension();
         $request->p_image->move(public_path('black/img'),$p_image);
 
-        $p_sup_image1 = 'IMG'.'-'.time().'.'.$request->p_sup_image1->extension();
+        $p_sup_image1 = 'IMG'.'-'.rand().'.'.$request->p_sup_image1->extension();
         $request->p_sup_image1->move(public_path('black/img'),$p_sup_image1);
 
-        $p_sup_image2 = 'IMG'.'-'.time().'.'.$request->p_sup_image2->extension();
+        $p_sup_image2 = 'IMG'.'-'.rand().'.'.$request->p_sup_image2->extension();
         $request->p_sup_image2->move(public_path('black/img'),$p_sup_image2);
 
         Product::where('id',$id)->update([

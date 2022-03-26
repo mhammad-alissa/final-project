@@ -10,7 +10,7 @@ if(isset($_POST) && !empty($_POST)){
     $phone = $_POST['phone'];
     $password = $_POST['password'];
     $image = $_POST['image_name'];
-    $sql="SELECT * FROM user WHERE email='".$email."' limit 1 ";
+    $sql="SELECT * FROM userrs WHERE email='".$email."' limit 1 ";
     $result = mysqli_query($db,$sql);
 
       if(mysqli_num_rows($result) == 1){
@@ -19,9 +19,9 @@ if(isset($_POST) && !empty($_POST)){
       }
       else{
              move_uploaded_file($_FILES['image']['tmp_name'],"../pablic/react-project-master/public/userImages/".$_FILES['image']['name']);
-             $sql_insert = "INSERT INTO user (name,email,phone,password,image) VALUES ('$name','$email','$phone','$password','$image')";
+             $sql_insert = "INSERT INTO userrs (name,email,phone,password,image) VALUES ('$name','$email','$phone','$password','$image')";
              if(mysqli_query($db,$sql_insert)){
-             $sql_select = "SELECT * FROM user where email = $email";
+             $sql_select = "SELECT * FROM userrs where email = $email";
              $result = mysqli_query($db,$sql);
              $row = mysqli_fetch_assoc($result);
              http_response_code(201);

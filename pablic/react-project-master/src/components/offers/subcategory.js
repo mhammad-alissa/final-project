@@ -10,15 +10,10 @@ class Subcategory extends Component {
   
     return (
       <>
-        <div className="home">
-          <img
-            className="home_background parallax-window"
-            data-parallax="scroll"
-            src="images/services3.jpg"
-            alt="user profile"
-          />
+        <div className="home" style={{backgroundColor:'#f3f6f9'}}>
+        
           <div className="home_content">
-            <div className="home_title">
+            <div className="home_title" style={{color:'black'}}>
               {localStorage.getItem("subCategoryName")}
             </div>
           </div>

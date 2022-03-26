@@ -3,7 +3,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">DexignZone</a> 2021</p>
+                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">mohammad alissa</a> </p>
             </div>
         </div>
         <!--**********************************
@@ -55,6 +55,6 @@
     <!-- Datatable -->
     <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="js/plugins-init/datatables.init.js"></script>
-    
+
 </body>
 </html>

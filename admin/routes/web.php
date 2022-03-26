@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserrController;
+use App\Http\Controllers\BookkingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,10 @@ Route::get('/addCategory', function () {
 });
 
 Route::resource('/category', 'CategoryController');
+
+Route::resource('/userr', 'UserrController');
+
+Route::resource('/booking', 'BookkingController');
 
 
 // Route::get('/category', [CategoryController::class, 'index']);
